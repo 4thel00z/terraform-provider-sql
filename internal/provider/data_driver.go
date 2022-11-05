@@ -3,9 +3,9 @@ package provider
 import (
 	"context"
 
+	"github.com/4thel00z/terraform-provider-sql/internal/server"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
-	"github.com/paultyng/terraform-provider-sql/internal/server"
 )
 
 type dataDriver struct {

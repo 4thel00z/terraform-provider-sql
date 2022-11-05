@@ -7,7 +7,7 @@ import (
 
 	helperresource "github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 
-	"github.com/paultyng/terraform-provider-sql/internal/migration"
+	"github.com/4thel00z/terraform-provider-sql/internal/migration"
 )
 
 func TestResourceMigrateDirectory(t *testing.T) {
