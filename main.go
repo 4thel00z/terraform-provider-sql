@@ -9,9 +9,9 @@ import (
 	"runtime"
 	"strings"
 
-	server "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server"
-	plugin "github.com/hashicorp/go-plugin"
 	"github.com/4thel00z/terraform-provider-sql/internal/provider"
+	plugin "github.com/hashicorp/go-plugin"
+	server "github.com/hashicorp/terraform-plugin-go/tfprotov6/tf6server"
 )
 
 // Generate docs for website
