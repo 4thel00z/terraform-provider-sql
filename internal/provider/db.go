@@ -35,7 +35,7 @@ func (p *provider) connect(dsn string) error {
 
 	switch scheme {
 	case "sqlite", "sqlite3":
-		p.Driver = "sqlite"
+		p.Driver = "sqlite3"
 		dsn = strings.TrimPrefix(dsn, fmt.Sprintf("%s://", scheme))
 	case "postgres", "postgresql":
 		// TODO: use consts for these driver names?
