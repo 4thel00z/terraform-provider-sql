@@ -12,7 +12,7 @@ import (
 	_ "github.com/denisenkom/go-mssqldb"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v4/stdlib"
-	_ "modern.org/sqlite"
+	_ "github.com/mattn/go-sqlite3"
 
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
 )
