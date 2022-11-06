@@ -12,7 +12,7 @@ import (
 	_ "github.com/denisenkom/go-mssqldb"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v4/stdlib"
-	// _ "modern.org/sqlite"
+	_ "modern.org/sqlite"
 
 	"github.com/hashicorp/terraform-plugin-go/tftypes"
 )
@@ -35,7 +35,7 @@ func (p *provider) connect(dsn string) error {
 
 	switch scheme {
 	case "sqlite", "sqlite3":
-		p.Driver = "sqlite3"
+		p.Driver = "sqlite"
 	case "postgres", "postgresql":
 		// TODO: use consts for these driver names?
 		p.Driver = "pgx"
